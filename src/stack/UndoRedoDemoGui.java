@@ -96,12 +96,13 @@ public class UndoRedoDemoGui extends JFrame {
 
     private void undoOperation() {
         if(undoStack.size()>1) {
+            isUndoRedoOperation=true;
             String undoText = undoStack.pop();
             redoStack.push(undoText);
-            textArea.setText(undoText);
             String previousState = undoStack.peek();
             textArea.setText(previousState);
-            isUndoRedoOperation = false;
+            previousText=previousState;
+            isUndoRedoOperation=false;
         }
     }
 
