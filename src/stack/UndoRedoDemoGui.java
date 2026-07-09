@@ -116,11 +116,6 @@ public class UndoRedoDemoGui extends JFrame {
         redoStack.clear();
     }
 
-
-
-
-
-
     public static void main(String[] args) {
         new UndoRedoDemoGui().setVisible(true);
     }
