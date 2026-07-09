@@ -10,5 +10,18 @@ public class MyQueue<T>{
             rear=front=node;
             return;
         }
+        rear.next=node;
+        rear=node;
+    }
+
+    public T dequeue(){
+        if(front==null){
+            return null;
+        }
+        T data=front.data;
+        front=front.next;
+
+        if(front==null){ rear = null;}
+        return data;
     }
 }
