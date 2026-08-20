@@ -54,7 +54,7 @@ public class SortingComparisonGUI extends JFrame {
         Random rand = new Random();
         String[] name= {"ram", "hari", "sita", "human", "sammy", "sangla","cheparo","bunu","munni","akbar"};
 
-        for(int i = 1;i<50,i++){
+        for(int i = 1;i<50;i++){
             students.add(new Student(i, name[rand.nextInt(name.length)], 20+rand.nextInt(70)));
         }
 
